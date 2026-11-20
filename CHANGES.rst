@@ -6,6 +6,13 @@ tsfresh uses `Semantic Versioning <http://semver.org/>`_
 
 Version 0.21.2
 ==============
+- Features:
+    - Add ``tsfresh.incremental``: an incremental rolling feature table that
+      re-extracts only the samples whose left-closed/right-open rolling window
+      actually changed after event inserts, corrections or deletes.  Events are
+      versioned by stable ids and monotonic revisions; raw authority, native
+      feature configuration, feature matrix and window provenance are stored as
+      atomic, whole generations that can be reopened and updated.
 - Bugfixes/Typos/Documentation:
     - Make tsfresh ready for newest pandas (>= 3) (#1120)
     - Update stumpy to >=1.11.1 (#1120)

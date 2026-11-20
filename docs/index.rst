@@ -35,6 +35,7 @@ The following chapters will explain the tsfresh package in detail:
    text/large_data
    text/tsfresh_on_a_cluster
    text/forecasting
+   text/incremental_rolling
    text/faq
    api/modules
    authors
